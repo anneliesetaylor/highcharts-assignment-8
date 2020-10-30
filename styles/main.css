@@ -1,0 +1,147 @@
+
+h1 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0.2em 0;
+}
+
+header {
+  background: #525252;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header p {
+  font-size: 1.5em;
+}
+
+body {
+  font-family: 'Raleway', 'Arial Narrow', sans-serif;
+  color: #fff;
+  background: #1f1f20;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#explanation1, #explanation2, #explanation3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 1.5em 2.5em 0.8em;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+#gap_globally {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#median_weekly_earning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bls_median_weekly_earning {
+  display: flex;
+  margin: 0;
+  width: 950px;
+  height: 400px;
+}
+
+#OECD_bar_graph {
+  display: block;
+  margin: 0;
+  width: 950px;
+  height: 800px;
+}
+
+
+/* --- link pseudo classes --- */
+
+a {
+    color: #a6f0ff;
+    text-decoration: none;
+}
+a:hover {
+    color: #00BBE0;
+}
+a:active {
+    color: #71d49e;
+}
+
+/*-- Media Queries --*/
+@media screen and (max-width: 950px) {
+  header {
+    text-align: center;
+  }
+
+  #explanation1, #explanation2, #explanation3 {
+    margin: 0;
+    padding: 1em 1.5em;
+    font-size: 1.5em;
+  }
+
+  #median_weekly_earning {
+    align-items: center;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.2em;
+  }
+
+  #bls_median_weekly_earning {
+    width: 600px;
+  }
+
+  #gap_globally {
+    align-items: center;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.2em;
+  }
+
+  #OECD_bar_graph {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2em;
+    padding: 0.2em 1em;
+  }
+
+  header p {
+    font-size: 0.8em;
+  }
+
+  #explanation1, #explanation2, #explanation3 {
+    font-size: 1em;
+    padding: 0 2.5em;
+  }
+
+  #median_weekly_earning {
+    padding: 0.2em 2em;
+  }
+
+  #bls_median_weekly_earning {
+    width: 300px;
+  }
+
+  #gap_globally {
+    padding: 0.2em 2em;
+  }
+
+  #OECD_bar_graph {
+    width: 300px;
+  }
+}
